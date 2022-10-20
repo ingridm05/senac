@@ -1,0 +1,17 @@
+p {color: blue;
+font-weight: 100;
+font-size: large;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: normal;
+}
+body{background-color: aquamarine;
+
+}
+h1 {
+
+    background-color: rgb(255, 0, 217);
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
