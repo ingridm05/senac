@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atv Dom</title>
+        
+
+                    </head>
+<body>
+    <div id="area">
+        Interaja...
+                     </div>
+<script>
+
+      var a = window.document.getElementById('area')
+    a.addEventListener('click' , clicar) 
+    a.addEventListener('mouseenter' , entrar)
+    a.addEventListener('mouseout', sair)
+
+    function clicar() {
+        var a= window.document.getElementById('area')
+        a.innerText = 'Clicou'
+        a.style.backgroundColor = 'red'
+    }
+    function entrar() { 
+        var a = window.document.getElementById('area')
+        a.innerText = 'Entrou'
+        a.style.backgroundColor = 'blue'
+    }
+    function sair() {
+         var a = window.document.getElementById('area')
+        a.innerText = 'Saiu'
+        a.style.backgroundColor = 'green'
+    }
+</script>
+
+   <style>
+   div#area {font:20pt Arial;
+    background-color:brown;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content:center;
+    color: aquamarine;
+    width:80%;
+    height: 500px;
+    align-items: center;
+    line-height: 200px;
+    text-align: center;
+    position: absolute;
+   top: 50%; 
+   left: 50%;
+border-radius: 500px;
+}  
+    </style>
+
+    
+
+     
+
+                    
+   
+
+                    
+
+
+</body>
+</html>
