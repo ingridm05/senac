@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior valor</title>
+    <link rel="stylesheet" href="qualémaior.css"> 
+</head>
+<body>
+    <h1>Maior valor</h1>
+<button onclick="maior()">Clique para comecar</button>
+<section id="saida">
+    <p>O resultado será apresentado aqui...</p>
+
+</section>
+<script>
+
+function maior() {
+    var n1 = Number(window.prompt('digite um numero: '))
+    var n2 = Number(window.prompt('digite um numero: '))
+
+    var res = document.querySelector('section#saida')
+if (n1 > n2) {
+    res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, o maior valor é <strong>${n1}</strong><p>`
+    } else if (n1 < n2) {
+        res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, o maior valor é <strong>${n2}</strong><p>`
+    } else {
+            res.innerHTML = `<p>Analisando os valores <mark>${n1}</mark> e <mark>${n2}</mark>, ambos sao <strong>IGUAIS</strong><p>`
+    }
+    
+}
+</script>
+</body>
+</html>
